@@ -14,7 +14,7 @@ function MvrDetailsForPkr() {
     const [rates, setRates] = useState([]);
 
   useEffect(() => {
-    axiosInstance.post(`/viewMovrById/${id.id}`).then((responce) => {
+    axiosInstance.post(`/https://mern-packers-backend.onrender.com`).then((responce) => {
       console.log(responce);
       setValue(responce.data.data);
     });
