@@ -14,7 +14,7 @@ function AdminMov() {
   }, []);
 
   const handleRemove = (id) => {
-    axiosInstance.post(`/deleteMoverById/${id}`)
+    axiosInstance.post(`/https://mern-packers-backend.onrender.com`)
       .then((res) => {
         console.log(res);
         if(res.data.status==200){
