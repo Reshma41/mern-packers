@@ -15,7 +15,7 @@ function PackersForgotPass() {
     const onSubmit=(e)=>{
         e.preventDefault();
 
-        axiosInstance.post("/forgotPwdPacker",values)
+        axiosInstance.post("/https://mern-packers-backend.onrender.com",values)
         .then((response)=>{
             console.log(response);
             
