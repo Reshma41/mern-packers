@@ -19,7 +19,7 @@ function MvrDetailsForPkr() {
       setValue(responce.data.data);
     });
 
-    axiosInstance.post(`/viewRateByMover/${id.id}`).then((responce) => {
+    axiosInstance.post(`/https://mern-packers-backend.onrender.com`).then((responce) => {
         console.log(responce);
         setRates(responce.data.data);
       });
