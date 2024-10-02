@@ -18,7 +18,7 @@ function PackersAddRating() {
     console.log(rating);
     console.log(review);
     axiosInstance
-      .post("/addReview", review)
+      .post("/https://mern-packers-backend.onrender.com", review)
       .then((res) => {
         console.log(res);
         if (res.status == 200) {
@@ -30,7 +30,7 @@ function PackersAddRating() {
         toast.error("failed");
       });
       axiosInstance
-      .post("/addRating", rating)
+      .post("/https://mern-packers-backend.onrender.com", rating)
       .then((res) => {
         console.log(res);
         if (res.status == 200) {
