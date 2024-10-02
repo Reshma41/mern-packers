@@ -11,7 +11,7 @@ function MoversViewOrderReq() {
   useEffect(() => {
     console.log(id);
     axiosInstance
-      .post(`/viewOrderByMoverId/${id}`)
+      .post(`/https://mern-packers-backend.onrender.com`)
       .then((res) => {
         console.log(res);
         setValue(res.data.data);
