@@ -28,7 +28,7 @@ function MoversEditProfile() {
   const updatefcn=(e)=>{
     e.preventDefault();
 
-    axiosInstance.post(`/editMoverById/${id}`,value)
+    axiosInstance.post(`/https://mern-packers-backend.onrender.com`,value)
     .then((response)=>{
       console.log(response);
       if (response.data.status==200) {
