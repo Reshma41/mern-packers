@@ -14,7 +14,7 @@ function PackersReg() {
     const navigate = useNavigate();
 
     const onSubmit = () => {
-        axiosInstance.post("/registerPacker",values)
+        axiosInstance.post("/https://mern-packers-backend.onrender.com",values)
     .then((response)=>{
         console.log("success",response)
         
