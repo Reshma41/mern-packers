@@ -18,7 +18,7 @@ const mover_id=localStorage.getItem('moversId')
   useEffect(() => {
 
 
-    axiosInstance.post(`/viewRateByMover/${mover_id}`)
+    axiosInstance.post(`/https://mern-packers-backend.onrender.com`)
     .then((res)=>{
     console.log(res);
     setValue(res.data.data[0])
@@ -29,7 +29,7 @@ const mover_id=localStorage.getItem('moversId')
   const updatefcn=(e)=>{
     e.preventDefault();
 
-    axiosInstance.post(`/editRateById/${mover_id}`,value)
+    axiosInstance.post(`/https://mern-packers-backend.onrender.com`,value)
     .then((response)=>{
       console.log(response);
       if (response.data.status==200) {
