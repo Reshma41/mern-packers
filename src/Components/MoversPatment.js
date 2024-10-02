@@ -16,7 +16,7 @@ function MoversPatment() {
 
   useEffect(() => {
     axiosInstance
-      .post(`/viewBooking/${id.id}`)
+      .post(`/https://mern-packers-backend.onrender.com`)
       .then((res) => {
         console.log(res);
         setbookingDetails(res.data.data);
@@ -32,7 +32,7 @@ function MoversPatment() {
       const mover_id = localStorage.getItem("moversId");
 
       axiosInstance
-        .post(`/updatePayment/${id.id}`, values)
+        .post(`/https://mern-packers-backend.onrender.com`, values)
         .then((res) => {
           console.log(res);
           if (res.data.status === 200) {
