@@ -14,7 +14,7 @@ function MoversForgotPass() {
     const onSubmit=(e)=>{
         e.preventDefault();
 
-        axiosInstance.post("/forgotPwdMover",values)
+        axiosInstance.post("/https://mern-packers-backend.onrender.com",values)
         .then((response)=>{
             console.log(response);
             
