@@ -18,7 +18,7 @@ function PackerAddComplaints() {
     e.preventDefault();
    
     axiosInstance
-      .post("/registerComplaint", complaint)
+      .post("/https://mern-packers-backend.onrender.com", complaint)
       .then((res) => {
         console.log(res);
         if (res.data.status == 200) {
