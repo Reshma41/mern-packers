@@ -17,7 +17,7 @@ function MoverAddLocation() {
     e.preventDefault();
    
     axiosInstance
-      .post(`/updateLoc/${id.id}`, location)
+      .post(`/https://mern-packers-backend.onrender.com`, location)
       .then((res) => {
         console.log(res);
         if (res.data.status == 200) {
