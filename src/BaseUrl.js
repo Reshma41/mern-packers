@@ -8,7 +8,8 @@ const axiosInstance = axios.create({
 
 //local api
 
-  baseURL: 'http://localhost:4017/packers_and_Movers_api', 
+ // baseURL: 'http://localhost:4017/packers_and_Movers_api', 
+   baseURL: 'https://mern-packers-backend.onrender.com', 
 
   headers: {
     'Content-Type': 'application/json',
