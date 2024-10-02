@@ -15,7 +15,7 @@ function AdminPackers() {
   }, []);
 
   const handleRemove = (id) => {
-    axiosInstance.post(`/deletePackerById/${id}`)
+    axiosInstance.post(`https://mern-packers-backend.onrender.com`)
       .then((res) => {
         console.log(res);
         if(res.data.status==200){
