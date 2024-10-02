@@ -17,7 +17,7 @@ function MoversViewRates() {
 
 
 
-  axiosInstance.post(`/viewRateByMover/${mover_id}`)
+  axiosInstance.post(`/https://mern-packers-backend.onrender.com`)
   .then((res)=>{
     console.log(res);
     setdetails(res.data.data)
