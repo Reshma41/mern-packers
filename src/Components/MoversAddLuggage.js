@@ -17,7 +17,7 @@ function MoversAddLuggage() {
     const onSubmit = (e) => {
         e.preventDefault();
       
-        axiosInstance.post('/addLuggage',values)
+        axiosInstance.post('/https://mern-packers-backend.onrender.com',values)
         .then((res)=>{
           console.log(res);
           if(res.data.status==200){
