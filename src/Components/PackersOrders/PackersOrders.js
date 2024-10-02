@@ -10,7 +10,7 @@ function PackersOrders() {
   useEffect(() => {
     console.log(id);
     axiosInstance
-      .post(`/viewOrderByPackerId/${id}`)
+      .post(`https://mern-packers-backend.onrender.com`)
       .then((res) => {
         console.log(res);
         setValue(res.data.data);
