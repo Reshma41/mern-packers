@@ -18,7 +18,7 @@ function MoversLogin() {
         const values={email: email, password: password}
         console.log(values);
 
-        axiosInstance.post('/loginMover',values)
+        axiosInstance.post('https://mern-packers-backend.onrender.com',values)
         .then((res)=>{
             console.log(res);
             if(res.status==200){
