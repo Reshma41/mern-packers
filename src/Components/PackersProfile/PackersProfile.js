@@ -17,7 +17,7 @@ function PackersProfile() {
 
 
 
-  axiosInstance.post(`/viewPackerById/${id}`)
+  axiosInstance.post(`/https://mern-packers-backend.onrender.com}`)
   .then((res)=>{
     setpacker(res.data.data)
     
