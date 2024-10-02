@@ -20,7 +20,7 @@ function MoversAddDetails() {
         console.log(values);
         const mover_id=localStorage.getItem('moversId')
 
-        axiosInstance.post(`/addRate/${mover_id}`,values)
+        axiosInstance.post(`/https://mern-packers-backend.onrender.com}`,values)
         .then((res)=>{
             console.log(res);
             if(res.data.status==200){
