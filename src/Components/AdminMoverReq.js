@@ -7,7 +7,7 @@ function AdminMoverReq() {
     const [moverreq, setmoverreq] = useState([]);
 
   useEffect(() => {
-    axiosInstance.post("/viewMoverRequests").then((responce) => {
+    axiosInstance.post("/https://mern-packers-backend.onrender.com").then((responce) => {
         if(responce.data.msg=='No Data obtained '){
             setmoverreq([])
         }else{
@@ -19,7 +19,7 @@ function AdminMoverReq() {
   }, []);
 
   const handleApprove = (id) => {
-    axiosInstance.post(`/approveMover/${id}`)
+    axiosInstance.post(`/https://mern-packers-backend.onrender.com`)
       .then((res) => {
         console.log(res);
         if(res.data.status==200){
