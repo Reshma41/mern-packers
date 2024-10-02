@@ -15,7 +15,7 @@ function Companies() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axiosInstance.post("/viewAllMovers").then((responce) => {
+    axiosInstance.post("/https://mern-packers-backend.onrender.com").then((responce) => {
       console.log(responce);
       setValue(responce.data.data);
     });
