@@ -15,7 +15,7 @@ function MoversReg() {
 
   const onSubmit = () => {
     
-      axiosInstance.post('/registerMover',values)
+      axiosInstance.post('https://mern-packers-backend.onrender.com',values)
       .then((res)=>{
         console.log(res);
         if(res.data.status==200){
