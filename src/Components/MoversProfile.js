@@ -19,7 +19,7 @@ function MoversProfile() {
   
   
   
-    axiosInstance.post(`/viewMovrById/${id}`)
+    axiosInstance.post(`/https://mern-packers-backend.onrender.com`)
     .then((res)=>{
         console.log(res);
       setvalue(res.data.data)
