@@ -27,9 +27,11 @@
   "build": "react-scripts build",
   "test": "react-scripts test"
 },
+  
   "engines": {
-  "node": "14.x"
+  "node": "20.x"
 },
+
 
 
   "eslintConfig": {
